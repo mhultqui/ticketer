@@ -13,8 +13,8 @@ class TicketChecker:
 
 t = TicketChecker()
 def ticketCheck(a1, num):
-	subnum = num % 31337
-	n = 1
+	subnum = (num-1) % 31337
+	n = 0
 	last = a1
 	while n < subnum:
 		last = t.next_Ticket(last)
